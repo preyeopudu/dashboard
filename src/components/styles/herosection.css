@@ -1,0 +1,48 @@
+.heroSectionContainer {
+  padding-left: 80px;
+  padding-top: 30px;
+  flex: 7;
+  background-color: white;
+}
+
+.heroHeader {
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 1.1px;
+}
+
+.bar {
+  display: none;
+}
+
+@media screen and (max-width: 825px) {
+  .heroHeader {
+    display: none;
+  }
+
+  .heroSectionContainer {
+    padding: 10px 0;
+  }
+
+  .bar {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .heroHeader {
+    display: none;
+  }
+
+  .bar {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .heroSectionContainer {
+    flex: 3;
+  }
+}

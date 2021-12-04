@@ -1,0 +1,14 @@
+.homeContainer {
+  height: 100%;
+  background-color: white;
+  vertical-align: baseline;
+  flex-direction: row;
+  overflow-y: auto;
+  display: flex;
+}
+
+@media screen and (max-width: 825px) {
+  .homeContainer {
+    flex-direction: column;
+  }
+}

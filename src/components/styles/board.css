@@ -1,0 +1,79 @@
+.table {
+  width: 100%;
+}
+
+.rowdate {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.transactionimage {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.transactionname {
+  display: flex;
+}
+
+td {
+  background-color: white;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  /* Change the color */
+  font-weight: bolder; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+ul .red::before {
+  color: red;
+}
+
+ul .blue::before {
+  color: blue;
+}
+
+ul .black::before {
+  color: black;
+}
+
+.transactionnamecontainer {
+  text-align: start;
+}
+
+thead tr td {
+  font-weight: 200;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+tbody tr td {
+  padding-top: 20px;
+}
+
+.rowname {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 825px) {
+  .tablecontainer {
+    width: 92%;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+}

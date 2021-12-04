@@ -1,0 +1,131 @@
+.cardContainer {
+  flex: 4;
+  margin-top: 150px;
+  background-color: white;
+  padding-left: 50px;
+  align-self: center;
+}
+
+.searchcontainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchbar {
+  border: 0;
+  width: 200px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.banklogo {
+  width: 35px;
+  height: 35px;
+  margin: 0px 25px;
+  object-fit: cover;
+}
+
+.mycard {
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 30px 0;
+}
+
+.searchbar:focus {
+  outline: none;
+}
+
+.cardtop {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mastercard {
+  width: 35px;
+  height: 35px;
+  margin: 0px 25px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 20px;
+  background: rgb(52, 48, 143);
+  width: 80%;
+  background: linear-gradient(
+    to bottom,
+    rgb(143, 30, 196) 0%,
+    rgb(143, 30, 196) 48%,
+    rgba(250, 3, 172, 1) 100%
+  );
+  padding: 15px;
+  color: white;
+  margin-top: 40px;
+}
+
+.cardheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardcode {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.cardcode p {
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+.cardcode p:not(:first-child) {
+  margin-left: 20px;
+}
+
+.cardvalid,
+.cardfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CVV {
+  margin-left: 30px;
+}
+.CVV p,
+.carddate p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 980px) {
+  .cardContainer {
+    flex: 2;
+    margin-top: 40px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .card {
+    align-self: center;
+    width: 90%;
+    padding: 25;
+  }
+
+  .cardContainer {
+    align-content: center;
+    padding: 0;
+  }
+}
